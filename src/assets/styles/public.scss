@@ -1,0 +1,40 @@
+.search {
+    display: flex;
+    justify-content: start;
+    background: #FFF;
+    height: 96px;
+    width: 80%;
+    margin: 15px auto;
+    line-height: 96px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+
+    &-form {
+        display: flex;
+        justify-content: start;
+        margin: 18px 0 0 18px;
+
+        .el-form-item--default {
+            margin-right: 5px;
+        }
+    }
+
+    &-btn {
+        margin-left: 20px;
+    }
+}
+
+.table-content {
+    width: 80%;
+    margin: 0 auto;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    padding-bottom: 60px;
+
+    .table-btn {
+        padding-top: 15px;
+        text-align: right;
+        margin-right: 1%;
+    }
+}

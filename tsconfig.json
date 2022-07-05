@@ -1,0 +1,54 @@
+{
+    "compilerOptions": {
+        // TypeScript 默认会把代码编译为 ECMAScript 3
+        // esnext 表示仅仅校验转换 TypeScript 类型，不进行语法编译
+        "target": "esnext",
+        "module": "esnext",
+        // 开启严格模式，这使得对“this”的数据属性进行更严格的推断成为可能
+        "strict": true,
+        "skipLibCheck":true,
+        "suppressImplicitAnyIndexErrors": true,
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "types": ["element-plus/global"],
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@styles/*": [
+                "src/assets/styles/*"
+            ],
+            "@cmps/*": [
+                "src/components/*"
+            ],
+            "@pages/*": [
+                "src/views/*"
+            ],
+            "@store/*": [
+                "src/store/*"
+            ],
+            "@layout/*":[
+                "src/layout/*"
+            ]
+        },
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost"
+        ]
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "src/types/images.d.ts",
+        "tests/**/*.ts",
+        "tests/**/*.tsx",
+        
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -1,0 +1,220 @@
+// cover some element-ui styles
+
+$mainColor:#76c97e;
+$mainHoverColor:#A5DCAB;
+
+$menuBg:#2a3f54;
+$menuTxtColor:#f2f2f2;
+$menuHover:linear-gradient(196deg, #50e298, #4fe377);
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+/*弹框*/
+
+.el-dialog {
+  border-radius: 10px;
+}
+
+.el-dialog__body {
+  padding-top: 15px;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+.el-dropdown-menu__item+.el-dropdown-menu__item {
+  border-top: 1px solid #eeeeee;
+}
+
+.el-dropdown-menu__item:hover {
+  color: #594eb1 !important;
+  background-color: #e7e5f8 !important;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+
+input {
+  outline: none !important;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+
+/*按钮*/
+.el-button {
+  font-size: 16px;
+
+  @media screen and (-webkit-min-device-pixel-ratio: 1.1) {
+    font-size: 14px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+}
+
+.el-button--primary {
+  background-color: #77c97d;
+  border-color: #77c97d;
+}
+
+.el-button--primary:focus,
+.el-button--primary:hover {
+  background-color: #8dd792;
+  border-color: #8dd792;
+}
+
+/*下拉框及文本框*/
+.el-select {
+  width: 100%;
+}
+
+.el-input__inner {
+  font-size: 16px;
+
+  @media screen and (-webkit-min-device-pixel-ratio: 1.1) {
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
+
+.el-input__icon {
+  line-height: 36px;
+}
+
+.el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 100%;
+}
+
+/*表格样式*/
+.el-table {
+  thead {
+    color: #333333 !important;
+  }
+
+  td {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  th.gutter {
+    display: table-cell !important;
+  }
+
+  .cell {
+    text-align: center;
+  }
+
+  .el-table .cell,
+  .el-table--border td:first-child .cell,
+  .el-table--border th:first-child .cell {
+    padding-left: 0;
+  }
+
+  .header-class {
+    background-color: #f6f5f8;
+  }
+}
+
+/*分页*/
+.pagination {
+  text-align: right !important;
+}
+
+.el-pagination {
+  margin-top: 30px;
+  text-align: right !important;
+}
+
+.el-pagination__total {
+  vertical-align: middle;
+}
+
+.el-pager li:not(.active):hover {
+  color: #666666 !important;
+  background-color: #ddf6df !important;
+}
+
+.el-pager li.active {
+  background-color: $mainColor !important;
+}
+
+/*页码--下拉框*/
+.el-pagination__sizes {
+  .el-input__inner {
+    height: 28px !important;
+    line-height: 28px !important;
+  }
+
+  .el-input__icon {
+    line-height: 28px !important;
+  }
+}
+
+/*表单*/
+.el-form-item__label {
+  font-size: 16px;
+  height: 40px;
+  overflow: hidden;
+  // text-align: justify;
+  // white-space: nowrap;
+  // text-align-last: justify;
+
+  @media screen and (-webkit-min-device-pixel-ratio: 1.1) {
+    font-size: 14px;
+  }
+}
+
+.el-form-item__label>span {
+  display: inline-block;
+  line-height: 20px !important;
+}
+
+:export {
+  mainColor: $mainColor;
+  mainHoverColor: $mainHoverColor;
+  menuBg: $menuBg;
+  menuTxtColor: $menuTxtColor;
+  menuHover: $menuHover;
+}
+.el-sub-menu__title{
+  font-size: 16px !important;
+}
